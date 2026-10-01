@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Space+Grotesk:wght@400;500;600&display=swap");
+:root {
+  --paper: #f4f1ea;
+  --ink: #202a25;
+  --muted: #788078;
+  --line: #d8d8ce;
+  --coral: #c85d45;
+  --mint: #4ea182;
+  --sand: #dfddd4;
+  --body: "Space Grotesk", sans-serif;
+  --display: "Playfair Display", serif;
+  --mono: "DM Mono", monospace;
+  font-family: var(--body);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--paper);
+}
+button,
+input {
+  font: inherit;
+}
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 3px;
+}
+body.lightbox-open {
+  overflow: hidden;
+}
